@@ -1,0 +1,17 @@
+h1{
+    font-family: Cambria,cochin,Geogia;
+    color:blue;
+}
+#pie{
+    background-color:lightgreen;
+    height: 5%;
+}
+#cabecera{
+    height: 10%;
+    background-color: aqua;
+}
+#contenido{
+    width: 80%;
+    background-color: cornflowerblue;
+    min-height: 80%;
+}
