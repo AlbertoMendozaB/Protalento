@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;    
@@ -69,7 +70,7 @@ aside{
     text-decoration:dotted;
     color: rgba(112, 7, 107, 0.774);    
     min-height: 80%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Sora','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     font-size: larger;
     font-weight: 900;    
@@ -111,3 +112,8 @@ aside{
 #bloqueMenu{
  float: right;  
 }
+
+@font-face {
+    font-family: "Sora";
+    src: url("Fonts/Sora-VariableFont_wght.ttf") format("truetype");
+  }
