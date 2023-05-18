@@ -1,17 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;    
+}
+.logo{
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
 h1{
     font-family: Cambria,cochin,Geogia;
     color:blue;
+}
+
+#cabecera{
+    height: 10%;
+    background-color: rgba(56, 142, 199, 0.582);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: darkblue;
+}
+#Datos{
+    display:flex;
+    align-items: stretch;
+}
+
+.contenido{
+    width: 50%;
+    background-color:darkslategray;
+    min-height: 80%;
+    font-style: italic;
+    font-size: larger;
+    font-weight: 900;
+    color: azure;
+}
+aside{
+    width: 50%;
+    background-color: lightsalmon;
+    min-height: 80%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #pie{
     background-color:lightgreen;
     height: 5%;
 }
-#cabecera{
-    height: 10%;
-    background-color: aqua;
+.image-profile{
+    width:100px;
+    height:100px;     
 }
-#contenido{
-    width: 80%;
-    background-color: cornflowerblue;
+#Experiencia{
+    background-color:rgba(3, 7, 49, 0.781);
+    text-decoration:dotted;
+    color: rgb(192, 123, 123);    
     min-height: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: larger;
+    font-weight: 900;
+}
+
+#Experiencia a{
+    color: rgb(192, 123, 123);    
+}
+
+#Aptitudes{
+    background-color:rgba(146, 192, 21, 0.781);
+    text-decoration:dotted;
+    color: rgba(112, 7, 107, 0.774);    
+    min-height: 80%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-style: italic;
+    font-size: larger;
+    font-weight: 900;    
+}
+.Menu{
+   /* background-position: center;*/
+    background-color:rgba(47, 79, 54, 0.514);
+    width: 100%;
+    height:8vh;
+    margin: 0;
+}
+
+.Menu a{
+    background-color:rgb(105, 145, 231);
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-display:unset;
+    text-decoration: none;
+    color:rgba(0, 0, 255, 0.466);
+    padding: 14px 16px;
+    height: 3vh;
+}
+
+.Menu a:hover{
+    color: aqua;
+    background-color: blue;
+    border: solid 3px;
+    border-radius: 5px;
+}
+
+/* Usar esta clase para marcvar las opciones del menú activo*/
+.Menu a.activo{
+    background-color: blue;
+    border: solid 3px;
+    border-radius: 5px;
+}
+
+#bloqueMenu{
+ float: right;  
 }

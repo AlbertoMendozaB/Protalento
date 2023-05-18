@@ -1,62 +1,135 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-        <meta name="author" content="ALberto Mendoza">  
-        <title>
-            Mi Primera página HTML
-        </title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <!--
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ALberto Mendoza">
+    <title>
+        Mi Primera página HTML
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!--
         Cuerpo del archivo, donde se configura la parte visual del documento
     -->
-    <body>
-<!--Cabecera de visualización-->        
+
+<body>
+    <header>
+        <!--Cabecera de visualización-->
         <div id="cabecera">
             <h1>Primer Proyecto en HTML 5</h1>
             <h6> Derechos reservados</h6>
-            <p>Hello World. My first HTML5 page</p>
-            <p>Prueba de párrafos</p> 
+            <p>Mi Hoja de Vida</p>
         </div>
-       <!--Agregar un Hipervinculo-->
-        <a href="https://www.linkedin.com/in/albertomendozamobiledeveloper/">Contacto</a>
-<!--Contenido-->
-<div id="contenido">
-<!--Listas-->
-        <ul>
-            Mis Listas de libros
-            <li>
-                100 años de soledad
-            </li>
-            <li>
-                El extranjero
-            </li>
-            <li>
-                Damian
-            </li>
-            <li>
-                El código Davinci
-            </li>
-        </ul>
-        <!--Listas ordenada es con ol. Se pueden agregar por atributos de tipos el tipo de orden-->
-        <ol type="1">
-            Mis listas ordenadas de deportes favoritos
-            <li>Fubol</li>
-            <li>Tenis</li>
-            <li>Voleyball</li>
-            <img src="Images/FotPerfil.png" alt="San Galen" width="300" height="400"/>
-        </ol>
-    </div>
-        <address id="pie">
-            Escrito por <a href="mailto:alberto.mendoza@tapirusit.com">Alberto Mendoza</a>.<br>
-            Visit us at:<br>
-            tapirusit.com<br>
-            Bogotá D.C.<br>
-            Colombia
-            <img src="PerfilPequeño.JPG" alt="RhainFall" width="100" height="100"/>
-            </address>
-    </body>
+        <div id="cabecera">
+            <nav class="Menu">
+                <div id="bloqueMenu">
+                    <a href="#">Inicio</a>
+                    <a href="#Datos">Datos Personales</a>
+                    <a href="#Experiencia">Experiencia Laboral</a>
+                    <a href="#Aptitudes">Aptitudes</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Agregar un Hipervinculo-->
+    <a href="https://www.linkedin.com/in/albertomendozamobiledeveloper/">Contacto</a>
+    <!--Contenido-->
+    <section id="Datos">
+        <div class="contenido">
+            <!--Listas-->
+            <ul>
+                <p><b>Datos Personales</b></p>
+                <li>
+                    Nombre: Alberto Mendoza Barón
+                </li>
+                <li>
+                    Nacionalidad: Colombia
+                </li>
+                <li>
+                    Vivo y nací en Bogotá D.C.
+                </li>
+                <li>
+                    50 años de edad.
+                </li>
+            </ul>
+            <img class="logo" src="Images/Perfil2.JPG" alt="Paris" />
+        </div>
+        <aside>
+            <!--Listas ordenada es con ol. Se pueden agregar por atributos de tipos el tipo de orden-->
+            <ol type="1">
+                Aficiones
+                <li>Cocinar</li>
+                <li>Lectura</li>
+                <li>Películas</li>
+                <li>Viajar</li>
+                <li>PodCast</li>
+                <img class="logo" src="Images/FotPerfil.png" alt="San Galen" width="300" height="400" />
+            </ol>
+        </aside>        
+    </section>
+<section id="Experiencia">
+    <p><b>Experiencia laboral</b></p>    
+    <ul>
+        <li>
+            CTD Ltda. Supervisor 1991 - 1993
+        </li>
+        <li>
+            <a href="https://www.fidupopular.com.co/">Fiduciaria Popular</a> Operador Centro de Cómputo 1993 - 2000
+        </li>
+        <li>
+            <a href="https://www.bbva.com.co/">BBVA</a> Desarrollador Visual Basic 2000-2001
+        </li>
+        <li>
+            <a href="https://www.ironmountain.com/co">G4S Data / Iron Mountain.</a> Líder de Desarrollo 2001 - 2010
+        </li>
+        <li>
+            <a href="https://agunsa.com/donde-estamos/paises/colombia/">Maritrans S.A.S. / Agunsa</a>  Jefe de Sistemas 2010 - 2016
+        </li>        
+        <li>
+            <a href="https://www.agroidea.com.co/">Agroidea S.A.S.</a>  Director de Desarrollo 2016 - 2017
+        </li>       
+        <li>
+            <a href="http://www.tapirusit.com/">Tapirus IT S.A.S.</a>Gerente General 2017 - Actual
+        </li>         
+    </ul>
+</section>
+<section id="Aptitudes">
+    <p><b>Aptitudes</b></p>        
+    <ul>
+        <li>
+            Assembler
+        </li>
+        <li>
+            C Ansi/C++
+        </li>
+        <li>
+            Visual Basic
+        </li>
+        <li>
+            C#
+        </li>
+        <li>
+            Cobol
+        </li>
+        <li>
+            Pascal
+        </li>
+        <li>
+            SQL
+        </li>                                        
+    </ul>
+</section>
+    <address id="pie">
+        Escrito por <a href="mailto:alberto.mendoza@tapirusit.com">Alberto Mendoza</a>.<br>
+        Visit us at:<br>
+        tapirusit.com<br>
+        Bogotá D.C.<br>
+        Colombia
+        <img class="image-profile" src="PerfilPequeño.JPG" alt="RhainFall"/>
+    </address>
+</body>
+
 </html>
