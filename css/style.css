@@ -113,6 +113,15 @@ aside{
  float: right;  
 }
 
+.Link{
+    background-color:azure;    
+    padding: 3px 5px;
+    height: 2vh;  
+    font-size: large;  
+    font-family: fantasy;
+    font-weight: 500;
+}
+
 @font-face {
     font-family: "Sora";
     src: url("Fonts/Sora-VariableFont_wght.ttf") format("truetype");
